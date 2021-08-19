@@ -21,15 +21,15 @@
         <div class="row mx-0 d-flex align-items-center">
             <a class="d-none d-md-flex flex-row nav-link" href="#">
                 <%= image_tag("profile.svg", alt: "profile", class:"d-none d-md-block") %>
-                <div class="d-none d-lg-block pl-1">Hi, Ashley</div>
+                <div class="d-none d-lg-block pl-1 nav-small">Hi, Ashley</div>
             </a>
             <a class="d-flex flex-row nav-link" href="<%= favorites_path %>">
                 <%= image_tag("heart.svg", alt: "favorites", class:"") %>
-                <div class="d-none d-lg-block pl-1" aria-hidden="true">Favorites</div>
+                <div class="d-none d-lg-block pl-1 nav-small" aria-hidden="true">Favorites</div>
             </a>
             <a class="d-flex flex-row nav-link pr-0" href="<%= checkout_path %>">
                 <%= image_tag("cart.svg", alt: "my cart", class:"") %>
-                <div class="d-none d-lg-block pl-1 " aria-hidden="true">Cart (3)</div>
+                <div class="d-none d-lg-block pl-1 nav-small" aria-hidden="true">Cart (3)</div>
             </a>
         </div>
 
@@ -38,18 +38,12 @@
         </button>
     </div>
     <div class="row pl-4 pb-2 d-none d-md-flex">
-        <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
+        <a class=" nav-link bold pl-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All Departments
         </a>
-
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%= render 'layouts/dropdowns' %>
         </div>
-        <a href=# class="nav-link bold pl-0">All Departments</a>
         <a href=# class="nav-link bold">Shop Sets</a>
         <a href=# class="nav-link bold">Rare Finds</a>
         <a href=# class="nav-link bold">New Arrivals</a>
@@ -66,5 +60,10 @@
         <a href=# class="nav-link">Donate Materials</a>
         <a href=# class="nav-link pb-3">About</a>
     </div>
-
 </div>
+
+
+
+
+
+
