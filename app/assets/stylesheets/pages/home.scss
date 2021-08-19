@@ -1,0 +1,40 @@
+.bg-primary {
+  background-color: #52A677 !important;
+}
+  
+.hero1 {
+  background-image: image-url('burned_logo.png');
+  height: 430px;
+  background-position: center;
+  background-size: 110%;
+}
+  
+.hero2 {
+  background-image: image-url('old_house.png');
+  height: 430px;
+  background-position: center;
+  background-size: cover;
+}
+  
+.hero3 {
+  background-image: image-url('action_shot1.png');
+  height: 430px;
+  background-position: center;
+  background-size: 110%;
+}
+  
+.carousel-control-prev {
+  width: 5%;
+  opacity: 75%;
+}
+  
+.carousel-control-next {
+  width: 5%;
+  opacity: 75%;
+}
+  
+.sale {
+  background-image: image-url('sale.png');
+  background-position: right;
+  background-size: 100%;
+}
